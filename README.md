@@ -5,6 +5,19 @@ Simple time recorder app.
 
 ![main_display](./main_screen.png)
 
+## Build
+
+**Development Build**
+```
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m pip install -e .
+
+# run
+time_recorder
+```
+
 
 ## Setup
 
