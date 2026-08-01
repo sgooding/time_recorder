@@ -3,7 +3,7 @@ import csv
 from PySide6.QtWidgets import QApplication, QFileDialog, QMainWindow, QMessageBox, QTableWidgetItem
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtCore import QFile, QTimer, Qt
-from ui_time_recorder import Ui_MainWindow
+from time_recorder.ui_time_recorder import Ui_MainWindow
 from datetime import datetime, UTC
 from PySide6.QtWidgets import QHeaderView
 
@@ -181,9 +181,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.critical(self, "Loading Error", f"Could not parse file:\n{str(e)}")
 
 
-
-if __name__ == "__main__":
+def main():
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
     sys.exit(app.exec())
+
+if __name__ == "__main__":
+    main()

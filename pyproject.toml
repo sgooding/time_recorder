@@ -17,5 +17,8 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+[project.scripts]
+time_recorder = "time_recorder.time_recorder:main"
+
 [project.urls]
 Homepage = "https://github.com/sgooding/time_recorder"
