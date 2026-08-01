@@ -5,6 +5,18 @@ Simple time recorder app.
 
 ![main_display](./main_screen.png)
 
+## Run
+
+```
+# install
+
+python -m pip install https://github.com/sgooding/time_recorder/releases/download/v0.1.0/time_recorder-0.1.0-py3-none-any.whl
+
+# run
+time_recorder
+
+```
+
 ## Build
 
 **Development Build**
